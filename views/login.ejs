@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proment-Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="scripts/login.js"></script>
+</head>
+<body>
+    
+    <div class="login">
+    <h1><b>PROMENT</b></h1>
+    <h5>Easy to manage</h5>
+    <form action="http://localhost:8080/home" onsubmit="return validate()" method="get"  id="loginForm">
+        <input type="email" placeholder="Email" name="email" id="email" required>
+        <br><br>
+        <input type="password" placeholder="Password" name="password" id="password" required>
+        <br><br>
+        <button id="login" type="submit">Login</button>
+        <br><br>
+        <input type="checkbox" id="check">
+        <span>Remember me</span>
+        <br>
+        <p>New to proment? <a href="#">Sign Up</a></p>
+    </form>
+    </div>
+    <br><br><br>
+    <div class="rights">
+        <span><b> &copy; </b> All Rights Reserved By <b>Gokul Ajith</b></span>
+    </div>
+
+</body>
+</html>

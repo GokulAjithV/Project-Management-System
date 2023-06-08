@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Interview</title>
+    <link rel="stylesheet" href="css/addInterview.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title">Add Interview</div>
+        <div class="content">
+            <form action="#">
+                <div class="add-interview">
+                    <div class="input-box">
+                        <span class="details">Name</span>
+                        <input type="text" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone</span>
+                        <input type="number" placeholder="Enter phone number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">City</span>
+                        <input type="text" placeholder="Enter your city" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Address</span>
+                        <input type="text" placeholder="Enter your address" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Gender</span>
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Designation</span>
+                        <input type="text" placeholder="Enter your designation" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Experience in years</span>
+                        <input type="number" placeholder="Enter your work experience" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Company</span>
+                        <input type="text" placeholder="Enter the company" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">CTC</span>
+                        <input type="number" placeholder="Enter the CTC you recevied in rupees" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Expected CTC</span>
+                        <input type="number" placeholder="Enter the expected CTC" required>
+                    </div>
+                    
+                </div>
+                <div class="input-box-2">
+                    <span class="details">Resume</span>
+                    <input type="file" id="resume">
+                    <label for="resume">
+                        Choose file 
+                    </label>
+                </div>
+
+                <div class="button">
+                    <input type="submit" value="Add">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/addClient.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    
+    <div class="content">
+      <form action="/clientSubmit" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" name="address" placeholder="Enter your address" required>
+          </div>
+          <div class="input-box">
+            <span class="details">City</span>
+            <input type="text" name="city" placeholder="Enter your city" required>
+          </div>
+          <div class="input-box">
+            <span class="details">State</span>
+            <input type="text" name="state" placeholder="Enter your state" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Pincode</span>
+            <input type="number" name="pin" placeholder="Confirm your pincode" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Country</span>
+            <input type="text" name="country" placeholder="Enter your country" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone</span>
+            <input type="number" name="phone" placeholder="Enter your phone number" required>
+          </div>
+        </div>
+        <div class="active">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <span class="activeOrNo">Active</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Yes</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">No</span>
+          </label>
+        </div>
+        <div class="button">
+          <input type="submit" value="Add Client">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

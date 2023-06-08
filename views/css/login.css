@@ -1,0 +1,58 @@
+html{
+    background-image: url("/images/pm.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-size: cover;
+}
+
+.login{
+    width: 300px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 450px;
+    padding: 80px;
+    margin-top: 100px;
+    border-radius: 15px;
+    background-color: rgb(185, 182, 182);
+    box-shadow: -3px -3px 9px #aaa9a9a2,
+    3px 3px 7px rgba(147, 149, 151, 0.671);
+
+}
+h1{
+    text-align: center;
+    color: #046577;
+   
+}
+
+
+#email,#password{
+    width: 300px;
+    height: 30px;
+    border:none;
+    border-radius: 7px;
+    padding-left: 8px;
+}
+
+#login{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: white;
+    background-color: black;
+
+}
+
+span{
+    color: black;
+}

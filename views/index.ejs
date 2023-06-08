@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>index</title>
+    <script src="app\lib\angular.min.js"></script>
+    <script src="app\lib\angular-route.min.js"></script>
+    <link rel="stylesheet" href="/content/css/dashboard.css">
+    <link rel="stylesheet" href="/content/css/sample.css">
+    <script type="text/Javascript" src="/content/scripts/dashboard.js"></script>
+    <script type="text/Javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <style>
+      header .navbar {
+  background-color: #f5f5f5;
+  position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #f1f1f1;
+      padding: 10px;
+} 
+
+header .main-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .main-nav li {
+  display: inline-block;
+}
+
+header .main-nav li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown:hover .sub-nav {
+  display: block;
+}
+
+.sub-nav {
+  display: none;
+  position: absolute;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.sub-nav li {
+  display: block;
+}
+
+.sub-nav li a {
+  color: #333;
+  text-decoration: none;
+}
+
+</style>
+</head>
+  <body ng-app="menuApp">
+    <div ng-controller="menuController">
+    <header>
+      <nav class="navbar">
+        <ul class="main-nav">
+          <!-- <li><a class="active" href="#/dashboard">Dashboard</a></li>
+          <li><a href="#/addInterview">Interview</a></li>
+          <li class="dropdown">
+            <a href="#">Accounts</a>
+            <ul class="sub-nav">
+              <li><a href="#/addClient">Add Client</a></li>
+              <li><a href="#/addEmployee">Add Employee</a></li>
+              <li><a href="#/addDesignation">Designation</a></li>
+            </ul>
+          </li>
+          <li><a href="#/contact">Contact</a></li> -->
+          <li ng-repeat="menu in menus">
+            <a href="{{ menu.link }}">{{ menu.title }}</a>
+          </li>
+        </ul>
+      </nav>    
+      </header>
+      </div>
+
+      <script>
+        var app = angular.module("menuApp", []);
+        app.controller("menuController", function($scope) {
+          $scope.menus = [
+        {
+            title : "Home",
+            link: "http://localhost:8080/dashboard",
+        },
+        {
+            title: "Interview",
+            link : "http://localhost:8080/addInterview"   
+        },
+        {
+            title : "addClient",
+            link : "http://localhost:8080/addClient"
+        },
+        {
+            title : "viewClient",
+            link : 'http://localhost:8080/viewClient'
+        },
+        {
+            title : "addEmployee",
+            link : "http://localhost:8080/addEmployee"
+        }
+    ];
+      
+});
+      </script>
+    </header>
+    <div ng-view></div>
+    
+  </body>
+</html>

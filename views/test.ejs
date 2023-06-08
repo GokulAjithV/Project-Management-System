@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Home</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+ <style>
+   ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+   }
+ 
+   li {
+     float: left;
+   }
+ 
+   li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+ 
+   li a:hover {
+     background-color: #111;
+   }
+
+   /* Custom Styles */
+   body {
+      padding: 20px;
+      color: #584b4b;
+    }
+    
+    .project-card {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+    
+    .project-card img {
+      height: 250px;
+      object-fit: cover;
+    }
+    
+    .project-card .card-body {
+      padding: 20px;
+    }
+    
+    .project-card .card-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .project-card .card-text {
+      margin-bottom: 20px;
+    }
+    
+    .project-card .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    
+    .project-card .btn-primary:hover {
+      background-color: #0069d9;
+      border-color: #81e453;
+    } 
+ </style>
+</head>
+<body ng-app="menuApp">
+ 
+ <div ng-controller="menuController">
+   <ul>
+     <li ng-repeat="menu in menus"><a href="{{ menu.link }}">{{ menu.title }}</a></li>
+   </ul>
+ </div>
+
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Protfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Welcome to <b>Proment</b></h1>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card project-card">
+          <img src="images\little-ones-school-website-template.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">ABC School Website Protfolio</h5>
+            <p class="card-text">The homepage serves as an introduction to the school management website, providing an overview of its features and functionalities.
+              It may include a welcome message, a brief description of the school, and highlights of its achievements or unique offerings.</p>
+            <a href="#" class="btn btn-primary">Find More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card project-card">
+          <img src="images\OIP (2).jpeg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Govt Corporation Water Website</h5>
+            <p class="card-text">The homepage serves as an entry point to the website, providing an overview of the water corporation and its services.
+              It may include a welcome message, mission statement, and highlights of the corporation's achievements or initiatives.</p>
+            <a href="#" class="btn btn-primary">Find More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card project-card">
+          <img src="images\f57731d1a88183d42e062c2d709c1f2e.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">M Vilas Food Management</h5>
+            <p class="card-text">The homepage serves as an entry point to the website, providing an overview of the food management system and its objectives.
+              It may include a welcome message, mission statement, and highlights of the system's features or benefits..</p>
+            <a href="#" class="btn btn-primary">Find More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card project-card">
+          <img src="images\travelix-free-travel-agency-website-templates.jpg" class="card-img-top" alt="Project 4">
+          <div class="card-body">
+            <h5 class="card-title">VGA Travel Agency</h5>
+            <p class="card-text">The homepage serves as the entry point to the website, providing an enticing overview of the travel agency's services.
+              It may include stunning images or videos of popular travel destinations to inspire visitors..</p>
+            <a href="#" class="btn btn-primary">Find More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+ 
+ <script>
+   // AngularJS code
+   var app = angular.module("menuApp", []);
+   app.controller("menuController", function($scope) {
+     $scope.menus = [
+       {
+         title: "Home",
+         link: "#"
+       },
+       {
+         title: "Task Manager",
+         link: "http://localhost:8080/dashboard"
+       },
+       {
+         title: "Interview",
+         link: "http://localhost:8080/addInterview"
+       },
+       {
+         title: "Add Client",
+         link: "http://localhost:8080/addClient"
+       },
+       {
+         title: "View Client",
+         link: "http://localhost:8080/viewClient"
+       },
+       {
+        title : "Contact",
+        link: "http://localhost:8080/contact"
+       }
+     ];
+   });
+ </script>
+</body>
+</html>

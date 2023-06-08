@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    background-position: cover;
+}
+
+.container{
+    margin-right: 100px;
+    margin-top: 100px;
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    height: 100%;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-left: 5px;
+  }
+
+  .container .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);  
+  }    
+
+  .content form .add-interview{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+
+  form .add-interview .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+  }
+  form .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  form .input-box-2 span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    padding-right: 650px;
+  }
+  .add-interview .input-box input , select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  .add-interview .input-box input:focus,
+  .add-interview .input-box input:valid{
+    border-color: #9b59b6;
+  }
+  input[type="file"]{
+    display: none;
+}
+
+.input-box-2 label{
+    color: white;
+    height : 30px;
+    width: 200px;
+    background-color: rgb(106, 106, 99);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins',sans-serif;
+    border-radius: 15px;
+
+}
+
+.input-box-2 label:hover{
+    background-color: rgb(78, 54, 102);
+}
+
+.content form .input-box-2{
+    padding-bottom: 20px;
+}
+
+input[type="submit"]{
+    margin-left: 10px;
+    width: 70px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #9b59b6;
+    height: 40px;
+}
+
+   @media(max-width: 584px){
+   .container{
+    max-width: 100%;
+  }
+  form .add-interview .input-box{
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    form .category{
+      width: 100%;
+    }
+    .content form .add-interview{
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+    .add-interview::-webkit-scrollbar{
+      width: 5px;
+    }
+    }
+    @media(max-width: 459px){
+    .container .content .category{
+      flex-direction: column;
+    }
+  }  

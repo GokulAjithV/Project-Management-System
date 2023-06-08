@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/content/css/addKnowledge.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Add knowledge</div>
+        <div class="content">
+            <form action="#" enctype="multipart/form-data">
+                <div class="knowledge-details">
+                    <div class="input-box-1">
+                        <span class="details">Title</span>
+                        <input type="text" placeholder="Enter the project title" required>
+                    </div>
+                    <div class="input-box-1">
+                        <span class="details">Platform</span>
+                        <select name="platform" id="platform">
+                            <option value="C">C</option>
+                            <option value="C++">C++</option>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="TypeScript">TypeScript</option>
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="Ruby">Ruby</option>
+                            <option value="Go">Go</option>
+                        </select>
+                    </div>
+                    <div class="input-box-2">
+                        <span class="details">Description</span>
+                        <textarea name="description" id="description" cols="30" rows="10" placeholder="Enter the description about the image and the file or folder" required></textarea>
+                    </div>
+                    
+                </div>
+                
+                <div class="input-box-3">
+                    <input type="file" id="image" accept="image/*">
+                    <label for="image">
+                        Upload image
+                    </label>
+                </div>
+                <div class="input-box-3">
+                    <input type="file" id="file">
+                    <label for="file">
+                        Upload SourceFile
+                    </label>
+                </div>
+
+                <div class="add-button">
+                    <input type="submit" value="Add">
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
