@@ -15,6 +15,8 @@ This project will allow the project team to handle the development process more 
 
 ![Screenshot 2023-07-23 190330](https://github.com/GokulAjithV/Product-Management-System/assets/96762110/9d1c1e83-72c5-4188-afa7-abad727164fb)
 
+![Screenshot 2023-07-23 191617](https://github.com/GokulAjithV/Product-Management-System/assets/96762110/a7d65e68-a4a4-4c8c-a018-b89b7a4fab12)
+
 ![Screenshot 2023-07-23 190400](https://github.com/GokulAjithV/Product-Management-System/assets/96762110/f454f895-24e3-4eab-a294-a5abbce81119)
 
 ![Screenshot 2023-07-23 190440](https://github.com/GokulAjithV/Product-Management-System/assets/96762110/ef4fe99a-082b-4f54-a798-b455d63e6957)
