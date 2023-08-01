@@ -6,6 +6,7 @@ This project will allow the project team to handle the development process more 
 #Express.js
 #MongoDB
 
+![Screenshot 2023-08-01 175627](https://github.com/GokulAjithV/Project-Management-System/assets/96762110/7e7089a8-fbe7-41e5-a7ed-56091296b229)
 
 ![Screenshot 2023-07-23 190151](https://github.com/GokulAjithV/Product-Management-System/assets/96762110/cff070ae-a544-4165-98d4-f520ab1a63a8)
 
